@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://git@github.com:leigp555/vue3-template/issues"
   },
-  "homepage": "https://git@github.com:leigp555/vue3-template#readme",
+  "homepage": "https://git@github.com:leigp555/vue3-template",
   "lint-staged": {
     "*.{vue,js,ts}": "eslint --fix"
   },
