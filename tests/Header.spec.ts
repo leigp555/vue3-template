@@ -9,5 +9,5 @@ test('Home.vue', async () => {
   expect(wrapper.html()).toContain('email')
   expect(wrapper.html()).toContain('main')
   expect(wrapper.html()).toContain('name')
-  expect(wrapper.html()).toContain('xx')
+  expect(wrapper.html()).toContain('yyy')
 })
