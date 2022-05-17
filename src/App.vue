@@ -1,12 +1,13 @@
 <template>
-  <div>home</div>
+  <div>doubleCount</div>
   <div>{{ xx }}</div>
   <hr />
   <div>{{ name }}</div>
   <div>{{ doubleCount }}</div>
+  <hr />
   <router-view />
   <hr />
-  <div>{{ log }}</div>
+  <div>{{ env }}</div>
   <div>{{ content }}</div>
 </template>
 
@@ -16,7 +17,7 @@ import { storeToRefs } from 'pinia'
 import axios, { AxiosResponse } from 'axios'
 import { useCounterStore } from '@/store'
 // import httpRequest from '@/utils/axios'
-const log = import.meta.env.VITE_BASE_URL
+const env = import.meta.env.VITE_BASE_URL
 axios
   .get('api/api/users/login')
   .then((res) => {
