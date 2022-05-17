@@ -7,6 +7,7 @@
     <div>main</div>
     <div>name</div>
     <div>try</div>
+    <div>ok</div>
     <div class="page-title">Vite2.x + Vue3.x + TypeScript + Element Plus</div>
   </div>
 </template>
