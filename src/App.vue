@@ -14,25 +14,26 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { storeToRefs } from 'pinia'
-import axios, { AxiosResponse } from 'axios'
+// import axios, { AxiosResponse } from 'axios'
 import { useCounterStore } from '@/store'
-// import httpRequest from '@/utils/axios'
+import httpRequest from '@/utils/axios'
+
 const env = import.meta.env.VITE_BASE_URL
-axios
-  .get('api/api/users/login')
-  .then((res) => {
-    console.log(res)
-  })
-  .catch((err) => {
-    console.log(err)
-  })
+// 使用vite代理 打包后代理会被抽离使用node或者nginx做代理
+// axios
+//   .get('api/api/users/login')
+//   .then((res) => {
+//     console.log(res)
+//   })
+//   .catch((err) => {
+//     console.log(err)
+//   })
 
 const content = ref<string>('')
-axios
-  .get('api/test')
-  .then((res: AxiosResponse<string>) => {
+httpRequest('/test', 'GET')
+  .then((res) => {
     console.log(res)
-    content.value = res.data
+    content.value = res as string
   })
   .catch((err) => {
     console.log(err)

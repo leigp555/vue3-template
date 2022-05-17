@@ -66,7 +66,7 @@ const httpRequest = (url: string, type = 'GET', data = {}) => {
       option.data = data
     }
     instance(option)
-      .then((res) => {
+      .then((res: AxiosResponse) => {
         if (res.status === 200 || res.status === 201) {
           resolve(res.data)
         } else {
