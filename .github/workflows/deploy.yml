@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build --base=https://leigp555.github.io/-Vue3-Template
+        run: npm run build --base=https://leigp555.github.io/vue3-template
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -28,4 +28,4 @@ jobs:
           github_token: ${{ secrets.Test }}
           user_name: ${{ secrets.MY_USER_NAME }}
           user_email: ${{ secrets.MY_USER_EMAIL }}
-          commit_message: Update Vite2.x + Vue3.x
+          commit_message: publish
