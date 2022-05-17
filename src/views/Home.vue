@@ -11,6 +11,7 @@
     <div>是否定</div>
     <div>无效</div>
     <div>yyy</div>
+    <div>build</div>
     <div class="page-title">Vite2.x + Vue3.x + TypeScript + Element Plus</div>
   </div>
 </template>
