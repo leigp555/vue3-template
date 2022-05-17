@@ -1,0 +1,31 @@
+name: deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js v14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
+
+      - name: Install
+        run: npm install
+
+      - name: Build
+        run: npm run build --base=https://leigp555.github.io/-Vue3-Template
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./dist
+          github_token: ${{ secrets.Test }}
+          user_name: ${{ secrets.MY_USER_NAME }}
+          user_email: ${{ secrets.MY_USER_EMAIL }}
+          commit_message: Update Vite2.x + Vue3.x

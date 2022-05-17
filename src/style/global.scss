@@ -1,0 +1,42 @@
+#app {
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+
+//table美化
+table {
+  max-width: 400px;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #c6c6c6;
+  margin-bottom: 20px;
+}
+table th {
+  border-collapse: collapse;
+  border-right: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+  background-color: #ddeeff;
+  padding: 5px 9px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+}
+table td {
+  border-collapse: collapse;
+  border-right: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  word-break: break-all;
+}
+table tr:nth-child(odd) {
+  background-color: #fff;
+}
+table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+

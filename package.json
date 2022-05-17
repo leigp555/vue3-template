@@ -1,0 +1,88 @@
+{
+  "name": "vite-vue3-tem",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A Vite2.x + Vue3 + TypeScript template starter",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build-tsc": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "format": "prettier --write ./src",
+    "lint": "eslint ./src --ext .vue,.js,.ts",
+    "lint-fix": "eslint --fix ./src --ext .vue,.js,.ts",
+    "prepare": "husky install",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:leigp555/-Vue3-Template.git"
+  },
+  "keywords": [
+    "Vite",
+    "Vue3",
+    "TypeScript",
+    "Starter"
+  ],
+  "author": "XPoet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://git@github.com:leigp555/-Vue3-Template/issues"
+  },
+  "homepage": "https://git@github.com:leigp555/-Vue3-Template#readme",
+  "lint-staged": {
+    "*.{vue,js,ts}": "eslint --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.2",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.14",
+    "qs": "^6.10.3",
+    "vant": "^3.4.9",
+    "vue": "^3.2.6",
+    "vue-router": "^4.0.15"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@types/jest": "^26.0.22",
+    "@types/mockjs": "^1.0.6",
+    "@types/nprogress": "^0.2.0",
+    "@types/qs": "^6.9.7",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/compiler-sfc": "^3.2.33",
+    "@vue/test-utils": "^2.0.0-rc.4",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "husky": "^8.0.1",
+    "jest": "^26.6.3",
+    "lint-staged": "^12.4.1",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.51.0",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.6.4",
+    "vite": "^2.9.9",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-mock": "^2.9.6",
+    "vite-plugin-style-import": "1.4.1",
+    "vue-jest": "^5.0.0-alpha.7",
+    "vue-tsc": "^0.34.12"
+  }
+}
