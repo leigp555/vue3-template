@@ -12,6 +12,7 @@
     <div>无效</div>
     <div>yyy</div>
     <div>build</div>
+    <div>publish</div>
     <div class="page-title">Vite2.x + Vue3.x + TypeScript + Element Plus</div>
   </div>
 </template>

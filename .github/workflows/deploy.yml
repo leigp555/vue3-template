@@ -19,7 +19,7 @@ jobs:
         run: yarn install
 
       - name: Build
-        run: yarn build --base=/my/public/path/
+        run: yarn build --base=https://leigp555.github.io/vue3-template
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
